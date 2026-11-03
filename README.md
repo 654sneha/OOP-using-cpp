@@ -540,43 +540,6 @@ Hybrid inheritance can be useful in large systems where different types of relat
 However, complex inheritance structures should be designed carefully because they can make software harder to understand and maintain.
 
 ---
-
-# 🔗 Relationship Between OOP Concepts
-
-The concepts covered in this repository are interconnected and form the foundation of Object-Oriented Programming.
-
-```text
-                    C++ OOP
-                       │
-        ┌──────────────┼──────────────┐
-        ↓              ↓              ↓
-     Classes        Objects       Encapsulation
-        │                              │
-        ↓                              ↓
-  Constructors                   Data Hiding
-        │                              │
-        ↓                              ↓
-   Destructors                  Access Specifiers
-                                       │
-                         ┌─────────────┴─────────────┐
-                         ↓                           ↓
-                  Friend Functions             Static Members
-                         │                           │
-                         └─────────────┬─────────────┘
-                                       ↓
-                                  Inheritance
-                                       │
-                  ┌────────────┬───────┼──────────┐
-                  ↓            ↓       ↓          ↓
-               Single      Multilevel Multiple  Hierarchical
-                                                     │
-                                                     ↓
-                                                  Hybrid
-```
-
-These concepts work together to provide a structured approach to designing software. **Classes and objects** form the basic building blocks, while **encapsulation and data hiding** help protect data. **Constructors and destructors** manage object initialization and cleanup. **Friend functions and static members** provide specialized ways of accessing and managing class-related data. **Inheritance** enables code reuse and establishes relationships between classes.
----
-
 # 11. Polymorphism
 
 ## What is Polymorphism?
