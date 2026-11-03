@@ -575,9 +575,196 @@ The concepts covered in this repository are interconnected and form the foundati
 ```
 
 These concepts work together to provide a structured approach to designing software. **Classes and objects** form the basic building blocks, while **encapsulation and data hiding** help protect data. **Constructors and destructors** manage object initialization and cleanup. **Friend functions and static members** provide specialized ways of accessing and managing class-related data. **Inheritance** enables code reuse and establishes relationships between classes.
+---
 
+# 11. Polymorphism
+
+## What is Polymorphism?
+
+**Polymorphism** is an Object-Oriented Programming concept that allows a single interface or function name to represent different behaviors.
+
+The term polymorphism means "many forms."
+
+In C++, polymorphism allows the same function or operation to behave differently depending on the context in which it is used.
+
+### Why is Polymorphism Used?
+
+Polymorphism is used to provide flexibility and extensibility in software development.
+
+It helps in:
+
+- Using a common interface for different operations
+- Reducing code duplication
+- Improving code reusability
+- Supporting flexible program design
+- Making software easier to extend and maintain
+
+## Types of Polymorphism
+
+C++ supports two major types of polymorphism:
+
+### Compile-Time Polymorphism
+
+Compile-time polymorphism is resolved by the compiler during compilation.
+
+It is commonly implemented using:
+
+- **Function Overloading:** Multiple functions have the same name but different parameter lists.
+- **Operator Overloading:** Operators are given specialized behavior for user-defined data types.
+
+### Runtime Polymorphism
+
+Runtime polymorphism is resolved during program execution.
+
+It is commonly implemented using:
+
+- **Function Overriding:** A derived class provides its own implementation of a function inherited from the base class.
+- **Virtual Functions:** Virtual functions enable runtime method dispatch through base-class pointers or references.
+
+## Important Characteristics
+
+- Supports multiple forms of behavior through a common interface.
+- Function overloading is an example of compile-time polymorphism.
+- Function overriding is an example of runtime polymorphism.
+- Virtual functions enable dynamic binding.
+- Improves flexibility and extensibility.
+
+## Advantages
+
+- Code reusability
+- Improved flexibility
+- Reduced code duplication
+- Easier maintenance
+- Supports extensible software design
+- Simplifies interaction with different object types
+
+## Real-World Example
+
+Consider a payment processing system.
+
+Different payment methods, such as:
+
+- Credit Card
+- UPI
+- Net Banking
+
+can provide their own implementation of a common payment operation.
+
+The same payment interface can be used to process different payment types without changing the calling code.
+
+## Applications
+
+Polymorphism is widely used in:
+
+- Payment processing systems
+- Graphics and animation software
+- GUI applications
+- Embedded software
+- Device driver development
+- Simulation systems
+- Extensible software frameworks
+
+---
+
+# 12. Exception Handling
+
+## What is Exception Handling?
+
+**Exception handling** is a mechanism in C++ used to detect and manage runtime errors or exceptional conditions without abruptly terminating the program.
+
+It allows a program to respond to unexpected situations and continue execution when possible.
+
+### Why is Exception Handling Used?
+
+Exception handling helps improve the reliability and robustness of software.
+
+It is used to:
+
+- Handle runtime errors
+- Prevent unexpected program termination
+- Separate error-handling logic from normal program logic
+- Provide meaningful error messages
+- Maintain program stability
+
+## Exception Handling Keywords
+
+C++ provides three main keywords for exception handling:
+
+### try
+
+The `try` block contains code that may generate an exception.
+
+### throw
+
+The `throw` keyword is used to signal an exception when an exceptional condition occurs.
+
+### catch
+
+The `catch` block handles an exception thrown from the corresponding `try` block.
+
+## Working Principle
+
+Exception handling follows this sequence:
+
+1. The program executes statements inside the `try` block.
+2. If an exceptional condition occurs, an exception is thrown using `throw`.
+3. The program searches for a matching `catch` block.
+4. The matching `catch` block handles the exception.
+5. Execution continues after the exception-handling structure.
+
+If no matching handler is found, the program may terminate.
+
+## Types of Exceptions
+
+### Standard Exceptions
+
+C++ provides standard exception classes through its standard library.
+
+Examples include:
+
+- `std::runtime_error`
+- `std::logic_error`
+- `std::out_of_range`
+- `std::invalid_argument`
+
+### User-Defined Exceptions
+
+Programmers can define and throw their own exceptions to handle application-specific error conditions.
+
+For example, a banking application may define an exception for insufficient account balance.
+
+## Advantages
+
+- Improves program reliability
+- Provides structured error handling
+- Separates error handling from normal logic
+- Helps prevent unexpected termination
+- Makes debugging and maintenance easier
+- Supports graceful recovery from errors
+
+## Real-World Example
+
+Consider a banking system.
+
+When a user attempts to withdraw more money than the available balance, the program can throw an exception.
+
+The exception handler can display an appropriate error message and prevent the invalid transaction from proceeding.
+
+## Applications
+
+Exception handling is commonly used in:
+
+- Banking and financial applications
+- File handling systems
+- Database applications
+- Network communication
+- Embedded software
+- Input validation
+- Resource management
+
+---
 # ⭐ Conclusion
 
 Object-Oriented Programming provides a structured approach to developing software by representing real-world entities as objects and defining relationships between them.
 
-The concepts covered in this repository form the foundation for writing **modular, reusable, maintainable**, and organized C++ programs.
+The concepts covered in this repository—including classes, objects, encapsulation, inheritance, polymorphism, and exception handling—form the foundation for writing modular, reusable, maintainable, and reliable C++ programs.
